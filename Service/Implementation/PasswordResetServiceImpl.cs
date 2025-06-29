@@ -37,7 +37,7 @@ namespace SmartOPS.API.Service.Implementation
 
             var user = tokenEntity.User;
 
-            if(!BCrypt.Net.BCrypt.Verify(oldPassword, newPassword)) return false;
+            if(!BCrypt.Net.BCrypt.Verify(oldPassword, user.PasswordHash)) return false;
 
             user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
             await _passwordResetRepository.UpdateUserPasswordAsync(user);
