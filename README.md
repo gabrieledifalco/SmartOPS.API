@@ -1,4 +1,4 @@
-# SmartOPS.API
+# SmartOPS.API (WORK IN PROGRESS)
 
 SmartOPS is a lightweight .NET-based backend application that simulates **Job execution** for **Supply Chain Management** in small-to-medium-sized businesses.
 
