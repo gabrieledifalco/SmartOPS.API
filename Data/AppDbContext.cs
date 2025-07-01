@@ -26,6 +26,5 @@ namespace SmartOPS.API.Data
             modelBuilder.Entity<MicroJob>().Property(mj => mj.Status).HasConversion<string>();
             modelBuilder.Entity<MicroJobResult>().Property(mjr => mjr.Status).HasConversion<string>();
         }
-
     }
 }

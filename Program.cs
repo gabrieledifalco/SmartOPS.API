@@ -58,6 +58,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Dependency Injection
 builder.Services.AddScoped<IJobService, JobServiceImpl>();
 builder.Services.AddScoped<IJobRepository, JobRepositoryImpl>();
+builder.Services.AddScoped<IJobResultRepository, JobResultRepositoryImpl>();
+builder.Services.AddScoped<IJobResultService, JobResultServiceImpl>();
+builder.Services.AddScoped<IMicroJobRepository, MicroJobRepositoryImpl>();
+builder.Services.AddScoped<IMicroJobService, MicroJobServiceImpl>();
+builder.Services.AddScoped<IMicroJobResultRepository, MicroJobResultRepositoryImpl>();
+builder.Services.AddScoped<IMicroJobResultService, MicroJobResultServiceImpl>();
 builder.Services.AddScoped<IUserService, UserServiceImpl>();
 builder.Services.AddScoped<IUserRepository, UserRepositoryImpl>();
 builder.Services.AddScoped<ICompanyService, CompanyServiceImpl>();
